@@ -54,6 +54,8 @@
      <Compile Include="Assets\DemoProject03\Scripts\CrowdSpawner.cs" />
      <Compile Include="Assets\DemoProject03\Scripts\Crowd_Move_Direction.cs" />
      <Compile Include="Assets\DemoProject03\Scripts\Destroy_Trigger.cs" />
+     <Compile Include="Assets\DemoProject03\Scripts\GameManager.cs" />
+     <Compile Include="Assets\DemoProject03\Scripts\MainMenu.cs" />
      <Compile Include="Assets\DemoProject03\Scripts\Player_Move_CC_02.cs" />
      <Compile Include="Assets\DemoProject03\Scripts\Sorry_Trigger.cs" />
      <None Include="Assets\DemoProject01\Description.txt" />

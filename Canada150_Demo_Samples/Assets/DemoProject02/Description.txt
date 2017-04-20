@@ -1,0 +1,8 @@
+Description for DemoProject02
+- first-person 3D camera movement
+- click logic to recognize when item is clicked
+- state machine to transition between different states in game
+- use of Mathf.sin to animate clickable objects
+- transition animation of position and rotation of camera to different states
+- changing which objects are viewable in each state
+- 3D text objects

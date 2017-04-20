@@ -1,0 +1,9 @@
+Description for DemoProject01
+- third-person 3D platformer with basic camera (parented to player)
+- third-person 3D movement and physics with Character Controller
+- 3D movement with arrow keys 
+- space bar to jump, gravity to fall down
+- logic to reload level if fall off edge, or if reach top of green platformer
+- example colored materials
+
+- PLUS: same scene in 2D to show how to make 2D gameplay/camera
