@@ -26,14 +26,14 @@ public class CrowdSpawner : MonoBehaviour {
 
 		if (totalTime > spawnTime) {
 			totalTime = 0f;
-			//Debug.Log ("spawing?");
+			Debug.Log ("spawing?");
 			int index = Random.Range (0, spawnPrefabs.Count - 1);
 			GameObject newPerson 
 				= (GameObject)Instantiate
 				(spawnPrefabs [index], spawnPrefabs[index].transform.position, spawnPrefabs[index].transform.rotation);
 			newPerson.SetActive (true);
 			crowd.Add (newPerson);
-			//Debug.Log ("crowd size = " + crowd.Count);
+			Debug.Log ("crowd size = " + crowd.Count);
 		}
 
 	}
