@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour {
 
 	public string nextLevelLoad = "";
 	public string escLoad = "";
+	public AudioSource audioS = null;
 
 	void Awake(){
 		startSorryCount = PlayerPrefs.GetInt ("currentSorryCount", 0);
@@ -57,6 +58,9 @@ public class GameManager : MonoBehaviour {
 			} else {
 				startText.text = "END LEVEL";
 				playerMove.enableMove = false;
+				if (audioS != null && audioS.isPlaying == false) {
+					audioS.Play ();
+				}
 			}
 		}
 

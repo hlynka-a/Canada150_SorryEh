@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/DemoProject03/Canada150_SorryEh_20170226.unity
+- path: Assets/DemoProject03/SorryEh_Level02.unity
   isLoaded: 1
   isActive: 1

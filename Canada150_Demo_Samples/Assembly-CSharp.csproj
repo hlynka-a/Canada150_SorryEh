@@ -46,11 +46,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DemoProject01\Scripts\Player_Move_CC.cs" />
+     <Compile Include="Assets\DemoProject01\Scripts\RestartLevel.cs" />
+     <Compile Include="Assets\DemoProject02\Scripts\Camera_FirstPerson.cs" />
+     <Compile Include="Assets\DemoProject02\Scripts\ClickObject.cs" />
+     <Compile Include="Assets\DemoProject02\Scripts\StateMachineManager.cs" />
+     <Compile Include="Assets\DemoProject03\Scripts\AnimateCharacter.cs" />
+     <Compile Include="Assets\DemoProject03\Scripts\AnimateEnemy.cs" />
      <Compile Include="Assets\DemoProject03\Scripts\CrowdSpawner.cs" />
      <Compile Include="Assets\DemoProject03\Scripts\Crowd_Move_Direction.cs" />
      <Compile Include="Assets\DemoProject03\Scripts\Destroy_Trigger.cs" />
+     <Compile Include="Assets\DemoProject03\Scripts\GameManager.cs" />
+     <Compile Include="Assets\DemoProject03\Scripts\Intro.cs" />
+     <Compile Include="Assets\DemoProject03\Scripts\MainMenu.cs" />
      <Compile Include="Assets\DemoProject03\Scripts\Player_Move_CC_02.cs" />
      <Compile Include="Assets\DemoProject03\Scripts\Sorry_Trigger.cs" />
+     <None Include="Assets\DemoProject01\Description.txt" />
+     <None Include="Assets\DemoProject02\Description.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/sd card materials/software/unity3d-5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

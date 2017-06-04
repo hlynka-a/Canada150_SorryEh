@@ -118,6 +118,7 @@ public class MainMenu : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+	float totalScoreTime = 0f;
 	void Update () {
 
 		if (state == 1) {
@@ -138,7 +139,9 @@ public class MainMenu : MonoBehaviour {
 				UpdateMainMenuUI ();
 			}
 		} else if (state == 2 || state == 3) {
-			if (Input.GetKey (KeyCode.Return)) {
+			totalScoreTime += Time.deltaTime;
+			if (Input.GetKey (KeyCode.Return) && totalScoreTime > 0.1f) {
+				totalScoreTime = 0f;
 				string newName = enterName.text;
 				if (state == 2 || highSorryScore == lowSorryScore) {
 					PlayerPrefs.SetString ("highSorryName", newName);
@@ -150,11 +153,14 @@ public class MainMenu : MonoBehaviour {
 				}
 				UpdateState (1);
 				UpdateMainMenuUI ();
-			} else if (Input.GetKey (KeyCode.Backspace)) {
+			} else if (Input.GetKey (KeyCode.Backspace) && totalScoreTime > 0.1) {
+				totalScoreTime = 0f;
 				enterName.text = enterName.text.Substring (0, Mathf.Max(enterName.text.Length - 1,0));
-			} else {
+			} else if (totalScoreTime > 0.1f) {
+				
 				foreach (char c in Input.inputString){
 					enterName.text = enterName.text + c;
+					totalScoreTime = 0f;
 				}
 			}
 		}
